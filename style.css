@@ -251,7 +251,7 @@ body{
     right: 0;
     width: 100%;
     height: 100%;
-    /* background: #050208; */
+    background: #050208;
     animation: showRight 1s ease forwards 1.3s;
     z-index: 2;
 }
