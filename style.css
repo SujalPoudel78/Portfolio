@@ -9,6 +9,7 @@
 }
 body{
     background: #050208;
+    overflow-x: hidden;
 }
 .header{
     position: fixed;
@@ -189,7 +190,6 @@ body{
     width: 170px;
     display: flex;
     justify-content: space-between;
-
 }
 .home-sc a{
     position: relative;
@@ -340,9 +340,54 @@ body{
 }
 @keyframes textglow {
     0%{
-        text-shadow: 0 0 5px #7d3bbf, 0 0 5px #7d3bbf;
+        text-shadow: 0 0 10px #7d3bbf, 0 0 10px #7d3bbf;
     }
     100%{
-        text-shadow: 0 0 7px #7d3bbf, 0 0 7px #7d3bbf;
+        text-shadow: 0 0 15px #7d3bbf, 0 0 15px #7d3bbf;
     }
+}
+
+/* ################### */
+
+@media screen and (max-width: 700px) 
+{
+.header{
+    background: #050208;
+    align-items: center;
+    padding: 2%;
+}
+.links a{
+    font-size: 75%;
+    /* padding-bottom: 10px; */
+}
+.home-content h1{
+    font-size: 25px;
+}
+.home-content h3{
+    font-size: 20px;
+}
+.home-content p{
+    font-size: 15px;
+    width: 50%;
+}
+.home-content .btn-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 345px;
+    height: 111px;
+}
+.home-content .btn-box a{
+    margin-top: 5px;
+    height: 100%;
+}
+.home-sc{
+    margin: 0 28%;
+}
+.pfp{
+    height: 25%;
+    width: 25%;
+    top: 30%;
+}
 }
